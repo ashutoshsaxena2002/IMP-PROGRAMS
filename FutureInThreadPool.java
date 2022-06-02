@@ -36,7 +36,7 @@ public class FutureInThreadPool implements Callable<String> {
 
     @Override
     public String call() throws Exception{
-        Thread.sleep(500000);
+        Thread.sleep(5000);
         String s="Hi"+Math.random();
         return s;
     }
