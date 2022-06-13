@@ -1,20 +1,24 @@
 package com.one97.OBCCPanel.practice.paypal.Graphs;
 
-public class AnonymousFunction {
-
+class c1{
     public  void show(){
         System.out.println("hi , this is normal function");
     }
+}
+
+public class AnonymousFunction{
+
+
 
     public static void main(String args[]){
 
-        AnonymousFunction anonymousFunction=new AnonymousFunction(){
+        c1 c1=new c1(){
           @Override
           public void show(){
               System.out.println("this is anonymous function");
           }
         };
-      anonymousFunction.show();
+      c1.show();
 
     }
 
