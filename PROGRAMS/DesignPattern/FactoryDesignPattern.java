@@ -1,4 +1,4 @@
-package com.one97.OBCCPanel.practice.paypal.Graphs.DesignPatterns;
+package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.DesignPattern;
 
 interface DeveloperData{
     Integer getSalary();

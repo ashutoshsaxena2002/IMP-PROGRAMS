@@ -1,4 +1,4 @@
-package com.one97.OBCCPanel.practice.paypal.Graphs.Threads;
+package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.Threads;
 
 class PrintEven implements Runnable{
     private ThreadWithSynchronize threadWithSynchronize;

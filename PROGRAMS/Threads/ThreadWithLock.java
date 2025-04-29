@@ -1,4 +1,4 @@
-package com.one97.OBCCPanel.practice.paypal.Graphs.Threads;
+package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.Threads;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
