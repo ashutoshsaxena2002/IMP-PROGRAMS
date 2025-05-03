@@ -1,4 +1,4 @@
-package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.DesignPattern;
+package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.DesignPattern.CreationalPattern;
 
 
 class Singleton{
