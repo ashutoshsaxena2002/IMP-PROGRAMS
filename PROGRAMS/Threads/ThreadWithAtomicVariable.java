@@ -5,9 +5,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ThreadWithAtomicVariable {
 
     private static AtomicInteger counter=new AtomicInteger(0);
+    private static Integer normalInteger=0;
     public  void incrementCounterThousandTimes() throws Exception{
        for(int i=1;i<=1000;i++){
            counter.incrementAndGet();
+           normalInteger++;
        }
     }
 
@@ -15,6 +17,7 @@ public class ThreadWithAtomicVariable {
     public  void incrementCounterThreeThousandTimes() throws Exception{
         for(int i=1;i<=3000;i++){
             counter.incrementAndGet();
+            normalInteger++;
         }
     }
 
@@ -51,5 +54,6 @@ public class ThreadWithAtomicVariable {
         t1.join();
         t2.join();
         System.out.println(counter.get());
+        System.out.println(normalInteger);
     }
 }

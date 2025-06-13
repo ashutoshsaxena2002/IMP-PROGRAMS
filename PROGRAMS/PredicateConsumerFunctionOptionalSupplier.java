@@ -1,9 +1,11 @@
 package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS;
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class PredicateConsumerFunctionOptionalSupplier {
 
@@ -12,6 +14,8 @@ public class PredicateConsumerFunctionOptionalSupplier {
         Function<String,Integer> f2=(s)->s.length();
         System.out.println(f1.apply("ASHU"));
         System.out.println(f1.andThen(f2).apply("ASHU"));
+
+
 
         Predicate<Integer> predicate=(e)->e%2==0;
         Integer [] list={1,2,3,4,5,6,7,8,9,10};
@@ -39,6 +43,13 @@ public class PredicateConsumerFunctionOptionalSupplier {
         for(Integer i:hashMap.keySet()){
             System.out.println(hashMap.get(i));
         }
+
+
+        Function<Integer,Integer> addBy2=(a)->a+2;
+        Consumer<Integer> printOriginalNumber=(a)-> System.out.print("ORIGINAL NUMBER:"+(a-2));
+        Consumer <Integer> printNewNumber=(a)-> System.out.println(" NEW NUMBER:"+a);
+        Supplier<List<Integer>> list2Supplier=()->Arrays.asList(list).stream().map(addBy2).collect(Collectors.toList());
+        list2Supplier.get().forEach(printOriginalNumber.andThen(printNewNumber));
 
 
     }
