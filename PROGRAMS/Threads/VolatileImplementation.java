@@ -3,15 +3,15 @@ package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.Threads;
 
 
 public class VolatileImplementation {
-    public static volatile boolean flag=false;
+    public static  boolean flag=false;
 
-    public static void setTheFLagTrue(){
+    public static void setTheFLagTrue() throws Exception{
+        Thread.sleep(5000);
         flag=true;
     }
 
     public static void checkTheFlag(){
         while(!flag){
-            System.out.println("THE FLAG IS FALSE......");
         }
         System.out.println("NOW THE FLAG VALUE IS:"+flag);
     }
@@ -20,7 +20,13 @@ public class VolatileImplementation {
         Thread t1=new Thread(new Runnable() {
             @Override
             public void run() {
-                setTheFLagTrue();
+                try {
+                    setTheFLagTrue();
+                }
+                catch (Exception e){
+
+                }
+
             }
         });
 

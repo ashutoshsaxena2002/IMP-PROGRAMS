@@ -46,14 +46,11 @@ Stream
 Functional interface
 flatMap
 FailSafe and FailFast Iterator
-
 Static block
 HAshMap Internal Working
 Abstract class  vs Interface
 Static Nested Class
 Private vs public vs protected vs default
-
-
 Comparator and Comparable and how to use to sort HashMap by key
 Reflection
 Final function And Class With deep and shallow copy concept
@@ -66,10 +63,4 @@ MicroServices
 SpringBoot
 Enscapsulation in java With Example: Refers to the concept of bundleing data in methods class
 Abstraction In java with example: Refers to the concept of data hiding
-
-
-
-
-
-
  */

@@ -1,5 +1,7 @@
 package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.DesignPattern.BehaviouralPattern;
 
+// It allows the object to alter it's behaviour when internal state changes
+
 interface VendingState{
     void insertCash(VendingMachine vendingMachine);
     void dispenseCash(VendingMachine vendingMachine);

@@ -1,6 +1,8 @@
 package com.one97.OBCCPanel.practice.paypal.Graphs.PROGRAMS.DesignPattern.BehaviouralPattern;
 
 
+// It helps user to define multiple algorithm for a statergy or task and use it depending on the situation
+
 interface PayStrategy{
     void pay();
 }
